@@ -8,3 +8,9 @@ except ImportError:
 {%- endif %}
 __author__ = "{{ cookiecutter.full_name }}"
 __email__ = "{{ cookiecutter.email }}"
+
+__all__ = [
+    "__version__",
+    "__author__",
+    "__email__",
+]

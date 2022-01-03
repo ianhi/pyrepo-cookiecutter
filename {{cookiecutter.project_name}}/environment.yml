@@ -1,0 +1,9 @@
+name: {{ cookiecutter.project_name }}
+channels:
+  - defaults
+dependencies:
+  - pandoc
+  - pip
+  - python
+  - pip:
+      - -e .[dev]

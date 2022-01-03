@@ -1,11 +1,14 @@
 {
-  "full_name": "Talley Lambert",
-  "email": "talley.lambert@gmail.com",
-  "github_username": "tlambert03",
+  "full_name": "Ian Hunt-Isaak",
+  "email": "ianhuntisaak@gmail.com",
+  "github_username": "ianhi",
   "project_name": "pyrepo",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "package description.",
   "pypi_username": "{{ cookiecutter.github_username }}",
-  "version_control": ["setuptools-scm", "bump2version", "None"],
-  "license": ["BSD license", "MIT license", "No license"]
+  "version_control": ["setuptools-scm", "_version.py", "bump2version"],
+  "license": ["BSD license", "MIT license", "No license"],
+  "_copy_without_render": [
+		".github/workflows/*"
+	]
 }
