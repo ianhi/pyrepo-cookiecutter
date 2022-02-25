@@ -56,7 +56,7 @@ If you have installed all developer dependencies (see [above](#contributing)), y
 tox -e doc
 ```
 
-If you open the `index.html` file in your browser you should now be able to see the rendered documentation.
+If you open the `_build/index.html` file in your browser you should now be able to see the rendered documentation.
 
 Alternatively, you can use [sphinx-autobuild](https://github.com/executablebooks/sphinx-autobuild) to continuously watch source files for changes and rebuild the documentation for you. Sphinx-autobuild will be installed automatically by the above `pip` command, so all you need to do is run:
 
