@@ -10,9 +10,9 @@ The below instructions also use [Mamba](https://github.com/mamba-org/mamba#the-f
 
 ```bash
 git clone <your fork>
-cd mpl-interactions
+cd {{ cookiecutter.project_name }}
 mamba env create
-conda activate mpl-interactions
+conda activate {{cookeicutter.project_name}}-dev
 pre-commit install
 ```
 
@@ -46,11 +46,11 @@ Also feel free to ask for help/advice on the relevant GitHub [issue](https://git
 
 ## Documentation
 
-Our documentation on Read the Docs ([mpl-interactions.rtfd.io](https://mpl-interactions.readthedocs.io)) is built with [Sphinx](https://www.sphinx-doc.org) from the notebooks in the `docs` folder. It contains both Markdown files and Jupyter notebooks.
+Our documentation on Read the Docs ([{{ cookiecutter.project_name }}.rtfd.io](https://{{ cookiecutter.project_name }}.readthedocs.io)) is built with [Sphinx](https://www.sphinx-doc.org) from the notebooks in the `docs` folder. It contains both Markdown files and Jupyter notebooks.
 
 Examples are best written as Jupyter notebooks. To write a new example, create in a notebook in the `docs/examples` directory and list its path under one of the [`toctree`s](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-toctree) in the `index.md` file. When the docs are generated, they will be rendered as static html pages by [myst-nb](https://myst-nb.readthedocs.io).
 
-If you have installed all developer dependencies (see [above](#contributing)), you can view recent modifications to the source files the following simple tox command:
+If you have installed all developer dependencies (see [above](#contributing)), you can view recent modifications to the source files with the following simple tox command:
 
 ```bash
 tox -e doc
