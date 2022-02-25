@@ -12,7 +12,7 @@ The below instructions also use [Mamba](https://github.com/mamba-org/mamba#the-f
 git clone <your fork>
 cd {{ cookiecutter.project_name }}
 mamba env create
-conda activate {{cookeicutter.project_name}}-dev
+conda activate {{cookiecutter.project_name}}-dev
 pre-commit install
 ```
 
