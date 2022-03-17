@@ -42,7 +42,7 @@ If you are working in a Jupyter Notebook, then in order to see your code changes
 
 Using Git/GitHub can confusing (<https://xkcd.com/1597>), so if you're new to Git, you may find it helpful to use a program like [GitHub Desktop](https://desktop.github.com) and to follow a [guide](https://github.com/firstcontributions/first-contributions#first-contributions).
 
-Also feel free to ask for help/advice on the relevant GitHub [issue](https://github.com/ianhi/mpl-interactions/issues).
+Also feel free to ask for help/advice on the relevant GitHub [issue](https://github.com/{{cookiecutter.github_username}}/{{ cookiecutter.project-name}}/issues).
 
 ## Documentation
 
