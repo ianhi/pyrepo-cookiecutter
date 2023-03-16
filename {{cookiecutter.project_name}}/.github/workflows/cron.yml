@@ -5,7 +5,7 @@ name: --pre Test
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # every 12 hours
+    - cron: "0 16 * * 1" # monday at noon est
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.8', '3.9', '3.10']
+        python-version: ['3.9', '3.10', '3.11']
         platform: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
@@ -33,10 +33,9 @@ jobs:
           python -m pip install tox tox-gh-actions
 
       - name: Test with tox
-        run: python -m tox -v --pre
+        run: python -m tox
         env:
           PLATFORM: ${{ matrix.platform }}
-
       # If something goes wrong, we can open an issue in the repo
       - name: Report Failures
         if: ${{ failure() }}
